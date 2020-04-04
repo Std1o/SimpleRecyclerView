@@ -22,16 +22,16 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.DataViewHolder> {
 
         DataViewHolder(View itemView) {
             super(itemView);
-            cv = (CardView)itemView.findViewById(R.id.cv);
-            tvTitle = (TextView)itemView.findViewById(R.id.tvTitle);
-            tvDescription = (TextView)itemView.findViewById(R.id.tvDescription);
+            cv = itemView.findViewById(R.id.cv);
+            tvTitle = itemView.findViewById(R.id.tvTitle);
+            tvDescription = itemView.findViewById(R.id.tvDescription);
         }
     }
 
     List<DataModel> dataList;
     Context mContext;
 
-    RVAdapter(List<DataModel> dataList, Context context){
+    RVAdapter(List<DataModel> dataList, Context context) {
         this.dataList = dataList;
         this.mContext = context;
     }
