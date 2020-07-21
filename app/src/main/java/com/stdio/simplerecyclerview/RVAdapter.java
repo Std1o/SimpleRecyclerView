@@ -61,6 +61,16 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.DataViewHolder> {
     }
 
     @Override
+    public long getItemId(int position) {
+        return position;
+    }
+
+    @Override
+    public int getItemViewType(int position) {
+        return position;
+    }
+
+    @Override
     public int getItemCount() {
         return dataList.size();
     }
